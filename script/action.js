@@ -343,8 +343,8 @@ targets.forEach(li => {
 });
 
 
-
-$('.mockup').mouseover(function () {
+//마우스버전
+/* $('.mockup').mouseover(function () {
     let img6Screen = $(this).height();            // mockup 박스 높이
     let img6Height = $(this).find('img').height(); // 이미지 실제 높이
     let moveY = img6Screen - img6Height;          // 올라가야 할 거리 (음수 값)
@@ -361,11 +361,11 @@ $('.mockup').mouseover(function () {
     let duration = Math.abs(moveY) / 100 * 500;
 
     $(this).find('img').stop().animate({ top: 0 }, 500);
-});
+}); */
 
 
 //스크롤버전
-/* window.addEventListener("load", () => {
+window.addEventListener("load", () => {
   gsap.utils.toArray(".mockup").forEach(mockup => {
     let img = mockup.querySelector("img");
 
@@ -374,18 +374,19 @@ $('.mockup').mouseover(function () {
     let moveY = imgHeight - parentHeight;
 
     gsap.to(img, {
-      y: moveY * 1.5,
+      y: -moveY/8,
       ease: "none",
       scrollTrigger: {
         trigger: mockup,
         start: "top bottom",
         end: "bottom top",
         scrub: true,
+        duration:10
       }
     });
   });
 });
- */
+
 
 
 
