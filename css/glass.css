@@ -1,0 +1,33 @@
+/* Base Glass Effect Variables */
+:root {
+  /* Glass opacity and blur values */
+  --glass-opacity-light: 0.15;
+  --glass-opacity-medium: 0.25;
+  --glass-opacity-heavy: 0.35;
+  --glass-blur-sm: 8px;
+  --glass-blur-md: 16px;
+  --glass-blur-lg: 24px;
+  --glass-blur-xl: 32px;
+
+  /* Glass border values */
+  --glass-border-light: rgba(255, 255, 255, 0.18);
+  --glass-border-dark: rgba(0, 0, 0, 0.1);
+  --glass-border-width: 1px;
+
+  /* Glass shadow values */
+  --glass-shadow-light: 0 8px 32px rgba(31, 38, 135, 0.37);
+  --glass-shadow-dark: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --glass-inset-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+
+  /* Glass tint colors */
+  --glass-tint-blue: rgba(31, 38, 135, var(--glass-opacity-light));
+  --glass-tint-purple: rgba(103, 58, 183, var(--glass-opacity-light));
+  --glass-tint-pink: rgba(233, 30, 99, var(--glass-opacity-light));
+  --glass-tint-green: rgba(76, 175, 80, var(--glass-opacity-light));
+  --glass-tint-orange: rgba(255, 152, 0, var(--glass-opacity-light));
+  --glass-tint-red: rgba(244, 67, 54, var(--glass-opacity-light));
+  --glass-tint-cyan: rgba(0, 188, 212, var(--glass-opacity-light));
+  --glass-tint-yellow: rgba(255, 235, 59, var(--glass-opacity-light));
+  --glass-tint-neutral: rgba(255, 255, 255, var(--glass-opacity-light));
+  --glass-tint-dark: rgba(0, 0, 0, var(--glass-opacity-light));
+}
